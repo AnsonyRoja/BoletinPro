@@ -1,0 +1,178 @@
+/* src/styles/boletasList.css */
+.boletas-list-page {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boletas-list-page h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.boletas-list-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.boletas-list-page th,
+.boletas-list-page td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.boletas-list-page th {
+    background: #4CAF50;
+    color: #fff;
+    font-weight: 600;
+}
+
+.boletas-list-page tr:hover {
+    background: #f1f7f6;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+
+.boletas-list-page button {
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.boletas-list-page button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.boletas-list-page button[type="button"] {
+    background: #2196F3;
+    color: #fff;
+}
+
+.boletas-list-page button[type="button"]:hover {
+    background: #1976D2;
+}
+
+.boletas-list-page button[type="button"].danger {
+    background: #f44336;
+    color: #fff;
+}
+
+.boletas-list-page button[type="button"].danger:hover {
+    background: #d32f2f;
+}
+
+.boletas-list-page button[type="button"].edit {
+    background: #FFC107;
+    color: #fff;
+}
+
+.boletas-list-page button[type="button"].edit:hover {
+    background: #FFB300;
+}
+
+.boletas-list-page p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+
+/* Contenedor principal del botón y selector de fuente */
+.boletas-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Botón de nueva boleta */
+.btn-new-boleta {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+/* Contenedor principal de los selectores de fuente */
+.font-size-controls {
+    display: flex;
+    align-items: flex-end;
+    /* Alinea inputs y labels en la misma línea */
+    gap: 1.5rem;
+    /* Espacio entre cada selector */
+    margin-bottom: 1rem;
+}
+
+/* Contenedor individual de cada selector */
+.font-size-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Label estilizado */
+.font-size-selector label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+
+/* Input estilizado */
+.font-size-selector input {
+    width: 60px;
+    padding: 0.3rem 0.4rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.font-size-selector input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Contenedor de botones dentro de la celda */
+.actions-cell {
+    display: flex;
+    flex-wrap: wrap;
+    /* Para que los botones se muevan a la siguiente línea si la pantalla es pequeña */
+    gap: 0.5rem;
+    /* Espacio entre botones */
+}
+
+/* Estilo general de los botones de acción */
+.actions-cell button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.actions-cell button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

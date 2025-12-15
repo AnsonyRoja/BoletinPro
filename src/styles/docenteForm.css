@@ -1,0 +1,60 @@
+.docente-form {
+    max-width: 480px;
+    margin: 40px auto;
+
+    padding: 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.docente-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.docente-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.docente-form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.docente-form input:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.15);
+}
+
+.docente-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.docente-form button:hover {
+    background-color: #125ea9;
+}

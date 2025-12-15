@@ -1,0 +1,168 @@
+/* Contenedor general */
+.grid-boletin {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* Labels */
+.grid-boletin label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+
+/* Inputs y Textareas unificados */
+.grid-boletin input[type="text"],
+.grid-boletin input[type="number"],
+.grid-boletin input[type="string"],
+.grid-boletin textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+/* Altura cómoda para textareas */
+.grid-boletin textarea {
+    min-height: 100px;
+    /* más espacio para escribir */
+    resize: vertical;
+    /* permite ajustar altura */
+}
+
+/* Inputs y Textareas al enfoque */
+.grid-boletin input:focus,
+.grid-boletin textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.25);
+    background-color: #fff;
+}
+
+/* Radios estilizados */
+.grid-boletin input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.grid-boletin input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Section titles */
+.grid-boletin .section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.3rem;
+}
+
+/* Tablas de aspectos y áreas */
+.aspectos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.aspectos-table th,
+.aspectos-table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.aspectos-table th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: 600;
+}
+
+.aspectos-table tr:hover {
+    background: #f1f7f6;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Botón guardar */
+.btn-guardar {
+    padding: 0.8rem 1.5rem;
+    background-color: #2196F3;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.btn-guardar:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.error {
+    color: #f44336;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.label-with-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+/* Botón casita */
+.btn-home {
+    background: #2196F3;
+    border: none;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-home:hover {
+    background: #1976D2;
+    transform: scale(1.1);
+}
