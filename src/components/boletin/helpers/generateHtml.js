@@ -128,6 +128,7 @@ tbody td, tbody th {
         <span style="font-size:${fontSize}pt;">${boleta.recomendaciones || ''}</span>
       </td>
     </tr>
+    
   
       <!-- Deberes de los Niños -->
     <tr>
