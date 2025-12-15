@@ -1,5 +1,5 @@
 
-const generateHtmlContent = (boleta, fontSize, fontSizeTitle, isExplore, docente, membrete) => {
+const generateHtmlContent = (boleta, fontSize, fontSizeTitle, isExplore, docente, membrete, pageBreak = "always") => {
 
 
     const html = `
@@ -24,7 +24,11 @@ th{text-align:center;background:#fff;font-weight:bold;}
 tbody td, tbody th {
     vertical-align: middle; /* opcional: centra verticalmente */
   }
-@media print{body{margin:0;padding:0;}.marco{margin: 5px 0 0 0;;}button,.no-print{display:none!important;}}
+@media print{
+.page-break {
+        page-break-before: ${pageBreak};
+    }
+body{margin:0;padding:0;}.marco{margin: 5px 0 0 0;;}button,.no-print{display:none!important;}}
 </style>
 </head>
 <body>
@@ -128,7 +132,7 @@ tbody td, tbody th {
         <span style="font-size:${fontSize}pt;">${boleta.recomendaciones || ''}</span>
       </td>
     </tr>
-    
+
   
       <!-- Deberes de los Niños -->
     <tr>
