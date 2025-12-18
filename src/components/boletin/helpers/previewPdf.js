@@ -566,7 +566,7 @@ export const previewBoletaPDF = async (pdf, boleta, docente, membrete, fontSizeT
         startY: pdf.lastAutoTable.finalY + 20,
 
         margin: {
-            left: (pageWidth - tableWidth) / 2   // ✅ centrado real
+            left: (pageWidth - tableWidth) / 2
         },
 
         theme: "grid",

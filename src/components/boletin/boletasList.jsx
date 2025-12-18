@@ -1,4 +1,3 @@
-// src/components/boletin/BoletasList.jsx
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import membrete from "../../assets/membrete.png";
@@ -6,8 +5,7 @@ import { downloadBoletaZip } from './helpers/compressFile';
 import '../../styles/boletasList.css'
 import { downloadAllBallotsZip } from './helpers/compressFileAll';
 import generateHtmlContent from './helpers/generateHtml';
-import { generateBoletaAllWord } from './helpers/generateWordAll';
-import { generateBoletasAllPDF } from './helpers/generatePdfAll';
+
 export default function BoletasList() {
     const [boletas, setBoletas] = useState([]);
 
@@ -101,7 +99,7 @@ export default function BoletasList() {
                     />
                 </div>
                 <div className="font-size-selector">
-                    <label htmlFor="fontSize">Titulos/Sub</label>
+                    <label htmlFor="fontSize">Títulos y Secciones</label>
                     <input
                         id="fontSize-title"
                         type="number"
@@ -161,7 +159,7 @@ export default function BoletasList() {
                 <button
                     type="button"
                     className="btn-download-all"
-                    onClick={() => downloadAllBallotsZip(boletas, docente, membrete, fontSizeTitle, fontSize)}
+                    onClick={boletas.length > 0 ? () => downloadAllBallotsZip(boletas, docente, membrete, fontSizeTitle, fontSize) : () => ""}
                 >
                     Descargar Boletas
                 </button>
