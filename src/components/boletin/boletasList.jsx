@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import membrete from "../../assets/membrete.png";
 import { downloadBoletaZip } from './helpers/compressFile';
 import '../../styles/boletasList.css'
-import { downloadAllBallotsZip } from './helpers/compressFileAll';
+import { downloadAllBallotsZip, donloadAllBallotsJson, uploadAllBallotsJson } from './helpers/compressFileAll';
 import generateHtmlContent from './helpers/generateHtml';
+import UploadBoletasButton from '../UploadBoletasButton';
 
 export default function BoletasList() {
     const [boletas, setBoletas] = useState([]);
@@ -78,6 +79,8 @@ export default function BoletasList() {
             localStorage.removeItem('boletin');
         }
     };
+
+
 
     return (
         <div className="boletas-list-page">
@@ -158,6 +161,16 @@ export default function BoletasList() {
             )}
 
             <div className="boletas-download-right">
+
+                <UploadBoletasButton boletas={boletas} />
+
+                <button
+                    type="button"
+                    className="btn-download-all"
+                    onClick={boletas.length > 0 ? () => donloadAllBallotsJson() : () => ""}
+                >
+                    Descargar Boletas Json
+                </button>
                 <button
                     type="button"
                     className="btn-download-all"
@@ -165,6 +178,7 @@ export default function BoletasList() {
                 >
                     Descargar Boletas
                 </button>
+
             </div>
         </div>
     );

@@ -16,10 +16,14 @@ export default function EscalaTable({ register }) {
                     <input
                         type="radio"
                         value={e.value}
-                        {...register('escalaGeneral')}
+                        {...register('escalaGeneral', {
+                            required: 'Debe seleccionar una escala'
+                        })}
                     />
                 </div>
+
             ))}
+
         </div>
     );
 }
