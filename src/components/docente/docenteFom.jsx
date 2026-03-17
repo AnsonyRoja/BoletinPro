@@ -72,10 +72,6 @@ export default function DocenteForm({ onReady }) {
             <input
                 {...register('seccion', {
                     required: 'La sección es obligatoria',
-                    pattern: {
-                        value: /^[A-Za-z]$/,
-                        message: 'Debe ser una sola letra (A-Z)'
-                    }
                 })}
                 placeholder="Ej: U"
                 onChange={(e) => setValue('seccion', e.target.value.toUpperCase(), { shouldValidate: true })}
