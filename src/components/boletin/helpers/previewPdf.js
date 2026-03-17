@@ -70,7 +70,7 @@ export const previewBoletaPDF = async (pdf, boleta, docente, membrete, fontSizeT
     pdf.setFontSize(fontSizeTitle - 3);
 
     pdf.text(
-        "BOLETÍN INFORMATIVO 2do MOMENTO PEDAGÓGICO",
+        "BOLETÍN INFORMATIVO 2DO MOMENTO PEDAGÓGICO",
         pageWidth / 2,
         y,
         { align: "center" }

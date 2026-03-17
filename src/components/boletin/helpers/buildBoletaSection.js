@@ -79,7 +79,7 @@ export const buildBoletaSections = (
             }),
             new Paragraph({ text: "" }),
             new Paragraph({
-                children: [new TextRun({ text: "BOLETÍN INFORMATIVO 2do MOMENTO PEDAGÓGICO", bold: true, size: fontSizeTitle, font: "Arial", })],
+                children: [new TextRun({ text: "BOLETÍN INFORMATIVO 2DO MOMENTO PEDAGÓGICO", bold: true, size: fontSizeTitle, font: "Arial", })],
                 alignment: AlignmentType.CENTER,
             }),
             new Paragraph({

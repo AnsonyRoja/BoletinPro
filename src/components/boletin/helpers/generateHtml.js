@@ -44,7 +44,7 @@ body{margin:0;padding:0;}.marco{margin: 5px 0 0 0;;}button,.no-print{display:non
 <p style="font-size:${fontSizeTitle}pt;">UNIDAD EDUCATIVA COLEGIO PRIVADO "LATINOAMÉRICA"</p>
 </div>
 <div class="title-info">
-<p style="font-weight:bold; font-size:${fontSizeTitle - 3}pt ">BOLETÍN INFORMATIVO 2do MOMENTO PEDAGÓGICO</p>
+<p style="font-weight:bold; font-size:${fontSizeTitle - 3}pt ">BOLETÍN INFORMATIVO 2DO MOMENTO PEDAGÓGICO</p>
 <p style="font-weight:bold; font-size:${fontSizeTitle - 3}pt"  >EDUCACIÓN PRIMARIA</p>
 </div>
 <div class="student-info">
