@@ -75,7 +75,7 @@ export default function DocenteForm({ onReady }) {
                 })}
                 placeholder="Ej: U"
                 onChange={(e) => setValue('seccion', e.target.value.toUpperCase(), { shouldValidate: true })}
-                maxLength="1"
+                maxLength="5"
                 className={errors.seccion ? 'error-input' : ''}
             />
             {errors.seccion && (
