@@ -239,13 +239,7 @@ export default function BoletinForm() {
             {/* Cédula + Edad */}
             <label>Cédula Escolar (V-) *</label>
             <input
-                {...register('cedulaEscolar', {
-                    required: 'La cédula es obligatoria',
-                    pattern: {
-                        value: /^(V|E)-\d{6,13}$/,
-                        message: 'Formato inválido. Ej: V-12345678'
-                    }
-                })}
+                {...register('cedulaEscolar')}
                 placeholder="E|V-12345678"
                 onChange={(e) => setValue('cedulaEscolar', e.target.value.toUpperCase())}
             />
