@@ -52,10 +52,12 @@ body{margin:0;padding:0;}.marco{margin: 5px 0 0 0;;}button,.no-print{display:non
 <div><strong style="font-size:${fontSizeTitle - 3}pt">NOMBRES Y APELLIDOS DEL ESTUDIANTE:</strong> <span style="text-decoration:underline; font-size:${fontSize}">${boleta.estudiante}</span> 
 <strong style="font-size:${fontSizeTitle - 3}pt">EDAD:</strong> <span style="text-decoration:underline; font-size:${fontSize}">${boleta.edad}</span></div>
 <div><strong style="font-size:${fontSizeTitle - 3}pt">CÉDULA ESCOLAR:</strong> <span style="text-decoration:underline; font-size:${fontSize}">${boleta.cedulaEscolar}</span>
-<strong style="font-size:${fontSizeTitle - 3}pt">GRADO:</strong> <span style="text-decoration:underline;font-size:${fontSize}">${docente.grado}</span>
-<strong style="font-size:${fontSizeTitle - 3}pt">SECCIÓN:</strong> <span style="text-decoration:underline;font-size:${fontSize}">${docente.seccion}</span>
-<strong style="font-size:${fontSizeTitle - 3}pt">DOCENTE:</strong> <span style="text-decoration:underline;font-size:${fontSize}">${docente.nombre}</span></div>
-<div><strong style="font-size:${fontSizeTitle - 3}pt">AÑO ESCOLAR:</strong> <span style="text-decoration:underline;font-size:${fontSize}">${docente.anoEscolar}</span></div>
+<strong style="font-size:${fontSizeTitle - 3}pt; margin-left: 15px;">GRADO:</strong> <span style="text-decoration:underline;font-size:${fontSize}">${docente.grado}</span>
+<strong style="font-size:${fontSizeTitle - 3}pt; margin-left: 15px;">SECCIÓN:</strong> <span style="text-decoration:underline;font-size:${fontSize}">${docente.seccion}</span>
+</div>
+<div>
+<strong style="font-size:${fontSizeTitle - 3}pt">DOCENTE:</strong> <span style="text-decoration:underline;font-size:${fontSize}">${docente.nombre}</span>
+<strong style="font-size:${fontSizeTitle - 3}pt; margin-left: 10px;">AÑO ESCOLAR:</strong> <span style="text-decoration:underline;font-size:${fontSize}">${docente.anoEscolar}</span></div>
 </div>
 <table>
 <thead>

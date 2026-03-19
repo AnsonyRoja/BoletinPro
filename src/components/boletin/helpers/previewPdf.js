@@ -149,25 +149,25 @@ export const previewBoletaPDF = async (pdf, boleta, docente, membrete, fontSizeT
 
     pdf.setFont('Times', 'bold');
     pdf.setFontSize(fontSizeTitle - 4);
-    pdf.text('GRADO:', 210, y);
+    pdf.text('GRADO:', 250, y);
     pdf.setFont('Times', 'normal');
     pdf.setFontSize(fontSize);
 
     const gradoText = docente.grado;
-    const gradoXStart = 250;
+    const gradoXStart = 290;
     const gradoWidth = pdf.getTextWidth(gradoText);
 
     pdf.text(gradoText, gradoXStart, y);
     pdf.line(gradoXStart, y + 2, gradoXStart + gradoWidth, y + 2);
     pdf.setFont('Times', 'bold');
     pdf.setFontSize(fontSizeTitle - 3);
-    pdf.text('SECCIÓN:', 310, y);
+    pdf.text('SECCIÓN:', 410, y);
 
     pdf.setFont('Times', 'normal');
     pdf.setFontSize(fontSize);
 
     const seccionText = docente.seccion;
-    const seccionXStart = 360;
+    const seccionXStart = 460;
     const seccionWidth = pdf.getTextWidth(seccionText);
     pdf.text(seccionText, seccionXStart, y);
     pdf.line(seccionXStart, y + 2, seccionXStart + seccionWidth, y + 2);
@@ -175,33 +175,37 @@ export const previewBoletaPDF = async (pdf, boleta, docente, membrete, fontSizeT
 
     pdf.setFont('Times', 'bold');
     pdf.setFontSize(fontSizeTitle - 4);
+    
 
-    pdf.text('DOCENTE:', 420, y);
+    y += 16;
+    
+
+     pdf.text('DOCENTE:', 40, y);
     pdf.setFont('Times', 'normal');
     pdf.setFont('Times', 'normal');
     pdf.setFontSize(fontSize);
 
     const docenteText = docente.nombre;          // texto del docente
-    const docenteXStart = 470;                   // posición inicial X
+    const docenteXStart = 89;                   // posición inicial X
     const docenteWidth = pdf.getTextWidth(docenteText); // ancho del texto
 
     pdf.text(docenteText, docenteXStart, y);              // escribimos el texto
     pdf.line(docenteXStart, y + 2, docenteXStart + docenteWidth, y + 2); // línea ajustada
 
 
-    y += 16;
+
 
     // Año Escolar
     pdf.setFont('Times', 'bold');
     pdf.setFontSize(fontSizeTitle - 4);
 
-    pdf.text('AÑO ESCOLAR:', 40, y);
+    pdf.text('AÑO ESCOLAR:', 220, y); //40 
     pdf.setFont('Times', 'normal');
     pdf.setFont('Times', 'normal');
     pdf.setFontSize(fontSize);
 
     const anoEscolarText = docente.anoEscolar;     // texto del año escolar
-    const anoXStart = 113;                          // posición inicial X
+    const anoXStart = 290;                          // posición inicial X 113
     const anoWidth = pdf.getTextWidth(anoEscolarText); // ancho del texto
 
     pdf.text(anoEscolarText, anoXStart, y);                // escribimos el texto
