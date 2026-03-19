@@ -171,9 +171,7 @@ export const generateBoletaPDF = async (boleta, docente, membrete, fontSizeTitle
 
     pdf.setFont('Times', 'bold');
     pdf.setFontSize(fontSizeTitle - 4);
-
     pdf.text('DOCENTE:', 420, y);
-    pdf.setFont('Times', 'normal');
     pdf.setFont('Times', 'normal');
     pdf.setFontSize(fontSize);
 
@@ -192,7 +190,6 @@ export const generateBoletaPDF = async (boleta, docente, membrete, fontSizeTitle
     pdf.setFontSize(fontSizeTitle - 4);
 
     pdf.text('AÑO ESCOLAR:', 40, y);
-    pdf.setFont('Times', 'normal');
     pdf.setFont('Times', 'normal');
     pdf.setFontSize(fontSize);
 
